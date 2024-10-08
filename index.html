@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake and Ladders</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="javascript.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 pt-1 ps-3">
+                    <img src="Images/Logo-Binus.png" class="img w-75" alt="Snake and Ladders">
+                </div>
+                <div class="col-sm-10">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <h2 class="m-0 pb-4">Accountin</h2>
+                        <h1 class="m-0">G</h1>
+                        <h2 class="m-0 pt-2">et Success</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="row justify-content-center align-items-top">
+            <div class="col-sm-1 d-flex text-center">
+                <p class="vertical-text">
+                    Accounting Laboratory
+                </p>
+            </div>
+            <div class="col-sm-10 d-flex justify-content-center overflow-hidden pt-2">
+                <svg id="board" width="100%" height="auto" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid meet"></svg>
+
+            </div>
+            <div class="col-sm-1 d-flex text-center justify-content-end">
+                <p class="vertical-text2">
+                    School of Accounting, BINUS University
+                </p>
+            </div>
+
+            <div id="player-setup">
+                <p id="player-turn">Pilih jumlah pemain (2-4):</p>
+                <select id="num-players">
+                    <option value="2">2 Pemain</option>
+                    <option value="3">3 Pemain</option>
+                    <option value="4">4 Pemain</option>
+                </select>
+                <button id="start-game">Mulai Permainan</button>
+            </div>
+            
+            <div id="game-container" style="display: none;">
+                <div id="controls">
+                    <button id="roll-dice">Lempar Dadu</button>
+                    <p id="dice-result">Dadu: </p>
+                    <p id="player-turn">Giliran Pemain: 1</p>
+                    <p id="message"></p>
+                </div>
+                <svg id="board" width="1200" height="600"></svg>
+            </div>
+            
+        </div>
+    </main>
+</body>
+
+</html>

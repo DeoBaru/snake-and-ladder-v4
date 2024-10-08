@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+@media (max-width: 600px) {
+    svg text {
+        font-size: 1.5%;  /* Adjust text size for smaller screens */
+    }
+}
+
+
+@font-face {
+    font-family: 'Arsenica';
+    src: url('Font-Arsenica/ArsenicaTrial-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arsenica';
+    src: url('Font-Arsenica/ArsenicaTrial-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Arsenica', sans-serif;
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: 'Arsenica', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 1.3rem;
+}
+
+.vertical-text2 {
+    writing-mode: vertical-rl;
+    transform: rotate(0deg);
+    white-space: nowrap;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.svg-board {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container untuk dadu dan informasi pemain */
+#player-setup, #controls {
+    display: flex;
+    justify-content: center;  /* Memusatkan konten secara horizontal */
+    align-items: center;
+    margin-top: 20px;  /* Memberi jarak dari papan */
+}
+
+#player-setup {
+    gap: 10px;
+}
+
+#controls > * {
+    margin: 0 10px;  /* Memberi sedikit ruang di antara elemen */
+}
+
+/* Tampilan tombol lempar dadu */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Tampilan informasi hasil dadu dan giliran pemain */
+#dice-result, #player-turn {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
